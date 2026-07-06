@@ -562,7 +562,7 @@ footer .name{font-family:var(--font-display);color:var(--navy-deep);margin-botto
   <div class="section-head" data-reveal>
     <p class="eyebrow">06 · Design & Activities</p>
     <h2>ผลงานการออกแบบและภาพถ่ายกิจกรรม</h2>
-    <p>รวมผลงานออกแบบและภาพบันทึกกิจกรรมที่ผ่านมา 8 ผลงาน</p>
+    <p>รวมผลงานออกแบบและภาพบันทึกกิจกรรมที่ผ่านมา 19 ผลงาน</p>
   </div>
   <div class="gallery-grid" id="galleryGrid"></div>
 </section>
@@ -639,7 +639,7 @@ for(let i=1;i<=10;i++){
 }
 
 const galleryGrid = document.getElementById('galleryGrid');
-for(let i=1;i<=8;i++){
+for(let i=1;i<=19;i++){
   const n = String(i).padStart(2,'0');
   const file = `assets/work-${n}.jpg`;
   const item = document.createElement('div');
@@ -649,7 +649,7 @@ for(let i=1;i<=8;i++){
   item.onclick = ()=>openLB(file, `ผลงาน ${n}`, 'ผลงานออกแบบ / ภาพกิจกรรม');
   item.innerHTML = `
     <img src="${file}" alt="ผลงาน ${n}" onerror="this.replaceWith(phEl('work-${n}.jpg'))">
-    <div class="gal-caption">ผลงาน ${n} / 08</div>`;
+    <div class="gal-caption">ผลงาน ${n} / 19</div>`;
   galleryGrid.appendChild(item);
 }
 
